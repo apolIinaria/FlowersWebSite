@@ -1,0 +1,1315 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: 10000px;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    background-color: rgba(244, 241, 248, 0.41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.header .logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #761326;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.nav-links a, .auth-links a {
+    text-decoration: none;
+    color: #761326;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #761326;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: 50px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #761326;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.auth-links a:last-child img {
+    position: relative;
+    top: -3px;
+}
+
+.icon0 {
+    width: 40px;
+    height: 35px;
+}
+
+.icon1 {
+    width: 32px;
+    height: 40px;
+}
+
+.main-block {
+    position: relative;
+    width: 100%;
+    height: 980px;
+    background-color: #F4F1F8;
+    margin-top: -105px;
+}
+
+
+.flower-bg {
+    position: absolute;
+    width: 100%;
+    height: 1015px;
+    top: 0;
+    left: 0;
+    background: url('../images/background_bouquet.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(168, 139, 145, 0.84);
+    opacity: 0.48;
+    filter: blur(2px);
+}
+
+.main-content {
+    position: absolute;
+    width: 798px;
+    height: 354px;
+    left: 70px;
+    top: 115px;
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Mak';
+    src: url('../fonts/Mak-BlackHigh.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-content h1 {
+    font-family: 'Mak', sans-serif;
+    font-weight: 1440;
+    font-size: 100px;
+    line-height: 125px;
+    letter-spacing: 0.08em;
+}
+
+.button-ctlg {
+    position: absolute;
+    width: 263px;
+    height: 65px;
+    left: 4px;
+    top: 492px;
+
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #761326;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-ctlg:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.button-ctlg:active {
+    box-shadow: 0px 4px 5px 0px #761326;
+}
+
+.button-ctlg-text {
+    color: #761326;
+    font-size: 24px;
+}
+.promo-block {
+    position: absolute;
+    width: 2096px;
+    height: 498px;
+    left: 50%;
+    top: 800px;
+    transform: translateX(-50%);
+    background: #E7E4E3;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.promo-block::before {
+    content: '';
+    position: absolute;
+    width: 1968px;
+    height: 440px;
+    left: 64px;
+    top: 25px;
+    border: 3px solid #BBB2B8;
+    border-radius: 50%;
+}
+
+.promo-text {
+    position: absolute;
+    width: 691px;
+    height: 99px;
+    left: calc(50% - 691px / 2 + 201.5px);
+    top: 100px;
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 99px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #761326;
+}
+
+.promo-subtext {
+    position: absolute;
+    width: 1440px;
+    height: 99px;
+    left: 1090px;
+    top: 150px;
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #761326;
+}
+
+.promo-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    width: 530px;
+    height: 61px;
+    left: 1000px;
+    top: 290px;
+    background: rgba(118, 19, 38, 0.25);
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.promo-button:hover {
+    background: rgba(118, 19, 38, 0.5);
+
+}
+
+.promo-button-text {
+    width: 427px;
+    height: 29px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.promo-discount {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 450px;
+    top: 50px;
+    background: url('../images/promo-discount.png');
+}
+
+.selection-block {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    top: 1120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(78, 92, 79, 0.81);
+}
+
+.selection-block {
+    position: absolute;
+    width: 100%;
+    height: 680px;
+    top: 1144px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(78, 92, 79, 0.81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px; /* Відстань між елементами */
+    margin-top: 120px;
+}
+
+.selection-item {
+    width: 340px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px #761326;
+}
+
+.seasonal-flowers {
+    background: url('../images/seasonal-flowers.jpg');
+}
+
+.indoor-plants {
+    background: url('../images/indoor-plants.jpg');
+}
+
+.yourbouquet {
+    background: url('../images/yourbouquet.jpg');
+}
+
+.seasonal-flowers,
+.indoor-plants,
+.yourbouquet {
+    background-size: cover;
+    background-position: center;
+}
+
+.selection-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 30px;
+}
+
+.selection-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #761326;
+    transition: background 0.3s ease;
+}
+
+.selection-button:hover {
+    background: white;
+}
+
+.divider {
+    position: absolute;
+    top: 1810px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+}
+
+.wave {
+    width: 100%;
+    overflow: hidden;
+    top: 905px;
+    position: relative;
+}
+
+.best-section {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+  }
+
+.best-for-you {
+    position: absolute;
+    width: 499px;
+    height: 58px;
+    left: calc(50% - 499px / 2 - 0.5px);
+    top: 930px;
+    font-family: 'Mak', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.bouquet-madam-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: 890px;
+    left: -450px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-madam-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease;
+    pointer-events: none;
+}
+
+.bouquet-madam-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-madam-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+  
+  .price-container-madam {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #344243;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-madam-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-madam-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .bouquet-madam-card .madam-hover-text1 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-madam-card:hover .madam-hover-text1 {
+    opacity: 1; 
+}
+
+.bouquet-madam-card .madam-hover-text2 {
+    position: absolute;
+    top: 46%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-madam-card:hover .madam-hover-text2 {
+    opacity: 1;
+}
+
+.bouquet-sapphire-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: 191px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-sapphire-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease; 
+    pointer-events: none;
+}
+  
+.bouquet-sapphire-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-sapphire-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+
+  .price-container-sapphire {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #393834;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-sapphire-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-sapphire-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .bouquet-sapphire-card .sapphire-hover-text1 {
+    position: absolute;
+    top: 24%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-sapphire-card:hover .sapphire-hover-text1 {
+    opacity: 1;
+}
+
+.bouquet-sapphire-card .sapphire-hover-text2 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-sapphire-card:hover .sapphire-hover-text2 {
+    opacity: 1;
+}
+
+.bouquet-bredli-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: -509px;
+    left: 450px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-bredli-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease;
+    pointer-events: none;
+}
+
+.bouquet-bredli-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-bredli-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+
+  .price-container-bredli {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #383838;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-bredli-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-bredli-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .price {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    top: 20px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .add-to-cart-button {
+    position: absolute;
+    width: 179px;
+    height: 46px;
+    left: 50%;
+    top: 70%; 
+    transform: translateX(-50%); 
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+ 
+  .add-to-cart-button span {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+
+  .bouquet-bredli-card .bredli-hover-text1 {
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-bredli-card:hover .bredli-hover-text1 {
+    opacity: 1;
+}
+
+.bouquet-bredli-card .bredli-hover-text2 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-bredli-card:hover .bredli-hover-text2 {
+    opacity: 1;
+}
+
+.bouquet-dream-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: -450px;
+    left: -450px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-dream-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease;
+    pointer-events: none;
+}
+
+.bouquet-dream-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-dream-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+  
+  .price-container-dream {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #35393A;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-dream-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-dream-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .bouquet-dream-card .dream-hover-text1 {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-dream-card:hover .dream-hover-text1 {
+    opacity: 1; 
+}
+
+.bouquet-dream-card .dream-hover-text2 {
+    position: absolute;
+    top: 47%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-dream-card:hover .dream-hover-text2 {
+    opacity: 1;
+}
+
+.bouquet-eva-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: -1150px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-eva-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease;
+    pointer-events: none;
+}
+
+.bouquet-eva-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-eva-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+  
+  .price-container-eva {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #302F34;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-eva-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-eva-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .bouquet-eva-card .eva-hover-text1 {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-eva-card:hover .eva-hover-text1 {
+    opacity: 1; 
+}
+
+.bouquet-eva-card .eva-hover-text2 {
+    position: absolute;
+    top: 47%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-eva-card:hover .eva-hover-text2 {
+    opacity: 1;
+}
+
+.bouquet-mirage-card {
+    position: relative;
+    width: 381px;
+    height: 678px;
+    top: -1850px;
+    left: 450px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.bouquet-mirage-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 62px;
+    transition: background-color all 0.3s ease;
+    pointer-events: none;
+}
+
+.bouquet-mirage-photo {
+    position: absolute;
+    width: 381px;
+    height: 529px;
+    top: 0;
+    left: 0;
+    background: url('../images/bouquet-mirage-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 62px;
+    z-index: 1;
+  }
+  
+  .price-container-mirage {
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    top: 60%;
+    background-color: #273536;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bouquet-mirage-card:hover {
+    transform: scale(1.05);
+  }
+
+  .bouquet-mirage-card:hover::after {
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 2;
+  }
+
+  .bouquet-mirage-card .mirage-hover-text1 {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-mirage-card:hover .mirage-hover-text1 {
+    opacity: 1; 
+}
+
+.bouquet-mirage-card .mirage-hover-text2 {
+    position: absolute;
+    top: 46%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Kodchasan', sans-serif;  ;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 3;
+}
+
+.bouquet-mirage-card:hover .mirage-hover-text2 {
+    opacity: 1;
+}
+
+.wave2 {
+    width: 100%;
+    overflow: hidden;
+    top: -1820px;
+    position: relative;
+}
+
+.about-us-section {
+    position: relative;
+    width: 100%;
+    height: 706px;
+    top: -1760px;
+    background: #e7e7e7;
+    margin: 0 auto;
+}
+
+.about-us-border {
+    position: absolute;
+    width: 90%;
+    height: 628px;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    border: 3px solid #BBB2B8;
+}
+
+.about-us-photo-frame {
+    position: absolute;
+    width: 460px;
+    height: 628px;
+    right: 0;
+    top: 0;
+    background: #904858;
+    border-radius: 227.5px 0px 0px 0px;
+}
+
+.about-us-photo {
+    position: absolute;
+    width: 409px;
+    height: 571px;
+    right: 22px;
+    top: 25px;
+    background: url('../images/about-us-photo.jpg') no-repeat center center;
+    background-size: cover;
+    border: 3px solid #FFFFFF;
+    border-radius: 204.5px 0px 0px 0px;
+}
+
+.about-us-text {
+    position: absolute;
+    left: 60px;
+    top: -10px;
+    width: 796px;
+}
+
+.about-us-title {
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #761326;
+    margin-bottom: 30px;
+}
+
+.about-us-description {
+    font-family: 'Avdira', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #761326;
+}
+
+.about-us-signature {
+    position: absolute;
+    width: 9%;
+    height: 15%;
+    left: 700px;
+    top: 460px;
+    border: 3px solid #761326;
+}
+
+.advantages-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 313px;
+    background: rgba(244, 241, 248, 0.41);
+    padding: 20px;
+    position: relative;
+    top: -1760px
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
+
+.advantage-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.advantage-title {
+    font-family: 'Avdira', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    color: #761326;
+    line-height: 29px;
+}
+
+.advantage:nth-child(4) {
+    transform: translateX(-47px); 
+    margin-top: 50px;
+}
+
+.advantage:nth-child(1)
+{
+    margin-top: 50px;
+}
+
+.advantage:nth-child(2) {
+    margin-top: 45px;
+    transform: translateX(-18px);
+}
+
+.advantage:nth-child(2) .advantage-icon {
+    width: 120px; 
+    height: auto;
+}
+
+.advantage:nth-child(3) {
+    transform: translateX(-18px);
+    margin-top: 50px;
+}
+
+.advantage:nth-child(3) .advantage-icon {
+    width: 140px;
+    height: auto;
+}
+
+@keyframes tilt {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+.advantage-icon:hover {
+    animation: tilt 0.5s ease-in-out;
+}
+
+.feedback-section-back {
+    position: relative;
+    width: 100%;
+}
+
+.feedback-divider {
+    position: absolute;
+    top: -1760px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.feedback-background {
+    position: absolute;
+    width: 100%;
+    height: 886px;
+    top: -1759px;
+    background: #656B61;
+    z-index: -1;
+}
+
+.feedback-divider2 {
+    position: absolute;
+    top: -989px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.feedback-main-section {
+    position: relative;
+    padding: 60px 20px;
+    top: -1765px;
+}
+
+.feedback-title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Контейнер Swiper */
+.swiper-container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    overflow: hidden; /* Скрываем лишние карточки */
+}
+
+/* Настройки карточек */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стилізація картки відгуку */
+.feedback-card {
+    position: relative;
+    width: 100%;
+    max-width: 347px; /* Максимальна ширина картки */
+    height: 197px;
+    background-color: #FFFFFF;
+    border-radius: 46px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    margin: 0 20px; /* Відступи між картками */
+}
+
+/* Фото користувача */
+.user-photo {
+    position: absolute;
+    width: 56px;
+    height: 55px;
+    top: 20px; /* Виправив топ, щоб фото не накладалося на текст */
+    left: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* Зірки */
+.stars {
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Текст відгуку */
+.feedback-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000;
+    margin-top: 55px;
+    margin-left: 22px;
+}
+
+/* Опис відгуку */
+.feedback-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-top: -20px;
+    margin-left: 22px;
+}
+
+/* Автор і дата */
+.feedback-author,
+.feedback-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6A6A6A;
+    margin-left: 105px;
+}
+
+.feedback-author {
+    margin-top: 25px;
+}
+
+.feedback-date {
+    color: #949494;
+    margin-top: -10px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;  /* Відступ знизу */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;  /* Початкова прозорість */
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;  /* Повна видимість активного кружечка */
+    background-color: #FFF700;  /* Колір активного кружечка */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .swiper-container {
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    .feedback-card {
+        width: 100%; /* Карточки повинні займати всю ширину екрану на мобільних */
+        max-width: none;
+        margin: 10px 0; /* Менші відступи між картками */
+    }
+}
