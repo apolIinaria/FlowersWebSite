@@ -296,7 +296,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px; /* Відстань між елементами */
+    gap: 90px;
     margin-top: 120px;
 }
 
@@ -1189,112 +1189,111 @@ body {
     margin-bottom: 40px;
 }
 
-/* Контейнер Swiper */
-.swiper-container {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    overflow: hidden; /* Скрываем лишние карточки */
-}
-
-/* Настройки карточек */
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Стилізація картки відгуку */
-.feedback-card {
+.carousel-container { 
+    width: 100%; 
+    max-width: 1250px;
+    overflow: hidden; 
     position: relative;
-    width: 100%;
-    max-width: 347px; /* Максимальна ширина картки */
-    height: 197px;
-    background-color: #FFFFFF;
-    border-radius: 46px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    margin: 0 20px; /* Відступи між картками */
+    margin: 0 auto;
 }
 
-/* Фото користувача */
-.user-photo {
+.carousel { 
+    display: flex; 
+    gap: 40px; 
+    transition: transform 0.8s ease-in-out;
+}
+
+.feedback { 
+    flex: 0 0 367px;
+    height: 217px;
+    padding: 6px;
+    background: white; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    border-radius: 46px; 
+    text-align: left; 
+    position: relative;
+}
+
+.stars { 
+    color: gold; 
+    font-size: 18px; 
+    position: left;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.feedback-text { 
+    font-size: 26px; 
+    font-weight: bold; 
+    margin: 10px 0; 
+    color: black;
+    font-family: 'Inter', sans-serif;
+    position: left;
+    margin-left: 10%;
+}
+
+.feedback-description { 
+    font-size: 16px; 
+    margin: 10px 0; 
+    color: #555;
+    font-family: 'Inter', sans-serif;
+    position: left;
+    margin-left: 10%; 
+}
+
+.user-info { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px; 
+    margin-left: 10%;
+    font-family: 'Inter', sans-serif;
+}
+
+.user-info img { 
+    width: 56px; 
+    height: 55px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    object-fit: cover;
+}
+
+.user-details { 
+    font-size: 16px; 
+    color: #777; 
+    margin-left: 3%;
+    line-height: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagination { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 15px; 
+}
+
+.dot { 
+    width: 21px; 
+    height: 20px; 
+    margin: 0 5px; 
+    background: #D9D9D9; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    transition: background 0.3s;
+    position: relative;
+    margin-top: 15px;
+}
+
+.dot.active { 
+    background: #D9D9D9;
+}
+
+.dot.active::before {
+    content: '';
     position: absolute;
-    width: 56px;
-    height: 55px;
-    top: 20px; /* Виправив топ, щоб фото не накладалося на текст */
-    left: 40px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-}
-
-/* Зірки */
-.stars {
-    position: absolute;
-    top: 32px;
-    left: 40px;
-    display: flex;
-    gap: 5px;
-}
-
-/* Текст відгуку */
-.feedback-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    color: #000;
-    margin-top: 55px;
-    margin-left: 22px;
-}
-
-/* Опис відгуку */
-.feedback-description {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    margin-top: -20px;
-    margin-left: 22px;
-}
-
-/* Автор і дата */
-.feedback-author,
-.feedback-date {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #6A6A6A;
-    margin-left: 105px;
-}
-
-.feedback-author {
-    margin-top: 25px;
-}
-
-.feedback-date {
-    color: #949494;
-    margin-top: -10px;
-}
-
-.swiper-pagination {
-    text-align: center;
-    padding-top: 20px;
-}
-
-/* Стилі для кожного кружечка пагінації */
-.swiper-pagination-bullet {
-    display: inline-block;
-    width: 12px;
+    top: 4px;
+    left: 4px;
+    width: 13px;
     height: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
+    background: #656B61;
     border-radius: 50%;
-    cursor: pointer;
-}
-
-/* Стилі для активного кружечка */
-.swiper-pagination-bullet.active {
-    background-color: #333;
 }

@@ -1,46 +1,51 @@
-// Ініціалізація слайдів
-let slideIndex = 1;  // Тому що значення змінюється (переходить між слайдами)
-showSlides(slideIndex);
+let index = 0;
+  const carousel = document.querySelector(".carousel");
+  const totalSlides = document.querySelectorAll(".feedback").length;
+  const visibleSlides = 3;
+  const pagination = document.querySelector(".pagination");
+  let interval;
 
-// Функція для зміщення слайдів вперед або назад
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  const totalPages = Math.ceil(totalSlides / visibleSlides);
+    for (let i = 0; i < totalPages; i++) {
+      let dot = document.createElement("div");
+      dot.classList.add("dot");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => goToSlide(i));
+      pagination.appendChild(dot);
+    }
 
-// Функція для вибору конкретного слайду (клік на кружечок)
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  const dots = document.querySelectorAll(".dot");
 
-// Основна функція для відображення слайдів
-function showSlides(n) {
-  const slides = document.getElementsByClassName("swiper-slide"); // Отримуємо всі слайди
-  const dots = document.getElementsByClassName("swiper-pagination-bullet"); // Отримуємо всі кружечки пагінації
+    function showSlide() {
+      if (index >= totalPages) index = 0;
+      if (index < 0) index = totalPages - 1;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+            
+      dots.forEach(dot => dot.classList.remove("active"));
+      dots[index].classList.add("active");
+    }
 
-  if (n > slides.length) {slideIndex = 1} // Якщо більше, ніж кількість слайдів, починаємо з першого
-  if (n < 1) {slideIndex = slides.length} // Якщо менше 1, переходимо до останнього слайду
+    function goToSlide(slideIndex) {
+      index = slideIndex;
+      showSlide();
+    }
 
-  // Ховаємо всі слайди
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    function nextSlide() {
+      index++;
+      showSlide();
+    }
 
-  // Відключаємо активний клас у всіх кружечків
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+    function startAutoSlide() {
+      interval = setInterval(nextSlide, 10000);
+    }
 
-  // Показуємо поточний слайд
-  slides[slideIndex-1].style.display = "block";
+    function stopAutoSlide() {
+      clearInterval(interval);
+    }
 
-  // Додаємо клас "active" до активного кружечка
-  dots[slideIndex-1].className += " active";
-}
+    startAutoSlide();
 
-// Додаємо обробку кліків для пагінації (кружечків)
-const bullets = document.querySelectorAll('.swiper-pagination-bullet');
-bullets.forEach(function(bullet, index) {
-  bullet.addEventListener('click', function() {
-    currentSlide(index + 1);
-  });
-});
+    document.querySelectorAll(".feedback").forEach((feedback) => {
+    feedback.addEventListener("mouseenter", stopAutoSlide);
+    feedback.addEventListener("mouseleave", startAutoSlide);
+    });
