@@ -1,4 +1,4 @@
-HEAD
+
 let index = 0;
   const carousel = document.querySelector(".carousel");
   const totalSlides = document.querySelectorAll(".feedback").length;
@@ -50,16 +50,3 @@ let index = 0;
     feedback.addEventListener("mouseenter", stopAutoSlide);
     feedback.addEventListener("mouseleave", startAutoSlide);
     });
-
-var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        type: 'bullets',
-        bulletClass: 'swiper-pagination-bullet',
-        bulletActiveClass: 'swiper-pagination-bullet-active'
-    },
-    navigation: false,
-});
-
