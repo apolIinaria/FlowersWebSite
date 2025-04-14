@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #FADADD;
-    height: 10000px;
+    height: 6221px;
     width: 100%;
 }
 
@@ -1394,8 +1394,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .submit-btn:active {
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Додаємо більшу тінь */
-    transform: scale(0.98); /* Зменшуємо розмір кнопки під час натискання */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.98);
 }
 
 .feedback-image {
@@ -1438,7 +1438,6 @@ input::placeholder, textarea::placeholder {
     z-index: 1;
 }
 
-/* Контейнер для всіх елементів в футері */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -1446,7 +1445,6 @@ input::placeholder, textarea::placeholder {
     padding: 0 500px 0 120px;
 }
 
-/* Групи контактів, інформації та каталогу */
 .footer-group {
     width: 30%;
     padding: 10px;
