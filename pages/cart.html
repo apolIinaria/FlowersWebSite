@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="logo">NOVOFLORA</a></div>
+    <main class="cart-container">
+        <div id="json-cart"></div>
+        <p class="cart-text">На жаль, твій кошик порожній</p>
+        <p class="cart-text2">Наповни його красою</p>
+    </main>
+
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('json-cart'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true, 
+          path: '../animation/cart.json'
+        });
+    </script>
+</body>
+</html>

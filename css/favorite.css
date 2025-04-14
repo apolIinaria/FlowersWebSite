@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: auto;
+    width: 100%;
+    color: #333;
+}
+    
+.header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+    
+.logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.favorite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  #json-heart {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .favorite-text {
+    font-size: 18px;
+    color: #761326;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Kodchasan', sans-serif;
+    opacity: 0.5;
+  }

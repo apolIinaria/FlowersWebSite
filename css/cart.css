@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: auto;
+    width: 100%;
+    color: #333;
+}
+    
+.header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+    
+.logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  #json-bouquet {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .cart-text {
+    font-size: 18px;
+    color: #761326;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Kodchasan', sans-serif;
+    opacity: 0.5;
+  }
+
+  .cart-text2 {
+    font-size: 18px;
+    color: #761326;
+    text-align: center;
+    margin-top: -15px;
+    font-family: 'Kodchasan', sans-serif;
+    opacity: 0.5;
+  }

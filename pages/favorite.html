@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Улюблене</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/favorite.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="logo">NOVOFLORA</a></div>
+    <main class="favorite-container">
+        <div id="json-heart"></div>
+        <p class="favorite-text">Тут будуть твої улюблені позиції</p>
+    </main>
+
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('json-heart'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true, 
+          path: '../animation/heart.json'
+        });
+    </script>
+</body>
+</html>
