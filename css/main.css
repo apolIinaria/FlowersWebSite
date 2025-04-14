@@ -3,6 +3,7 @@ body {
     background-color: #FADADD;
     height: 6221px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header {

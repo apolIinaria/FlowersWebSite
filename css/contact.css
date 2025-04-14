@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: auto;
+    width: 100%;
+    color: #333;
+    overflow-x: hidden;
+}
+    
+.header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+    
+.logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.contacts-container {
+    padding: 40px;
+    text-align: center;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  
+.contacts-title {
+    text-align: center;
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #761326;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+  
+.contact-info p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #5b0d1f;
+}
+  
+.map {
+    margin: 30px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 200px;
+}
+  
+.social-media {
+    margin-top: 30px;
+}
+  
+.social-media a {
+    margin: 0 15px;
+    font-size: 32px;
+    color: #761326;
+    transition: transform 0.3s ease;
+}
+  
+.social-media a:hover {
+    transform: scale(1.2);
+    color: #a11a36;
+}
