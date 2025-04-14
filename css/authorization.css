@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-size: cover;
+    background-color: #FADADD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    z-index: 2;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    color: #761326;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    width: 380px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #000000;
+    font-size: medium;
+}
+
+.form-group input {
+    width: 380px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.form-group input[type="submit"] {
+    background-color: #761326;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 400px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #661313;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: #761326;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.registration-form {
+    display: none;
+}
+
+.back {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    padding: 30px 90px 10px;
+    box-sizing: border-box;
+}
+  
+.logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Segoe+UI:wght@400&display=swap');
+    
+body {
+  margin: 0;
+  background-color: #FADADD;
+  height: auto;
+  width: 100%;
+  color: #333;
+}
+  
+.header {
+  position: relative;
+  width: 100%;
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+  
+.logo {
+  font-family: 'Kodchasan', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #761326;
+  margin-left: 50px;
+  text-decoration: none;
+}
+  
+header h1 {
+  text-align: center;
+  font-family: 'Brock Script_D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: #761326;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+  
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+  
+.gallery img, iframe {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+  
+iframe {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+  
+@media (max-width: 768px) {
+.gallery {
+  grid-template-columns: 1fr;
+  }
+}

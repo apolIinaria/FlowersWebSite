@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/authorization.css">
+</head>
+<body>
+  <div class="form-container">
+
+    <div id="loginForm">
+      <h2>Авторизація</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Логін</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Увійти">
+        </div>
+      </form>
+      <div class="form-footer">
+        <p>Немає акаунту? <a href="javascript:void(0);" onclick="showRegistrationForm()">Зареєструйтесь</a></p>
+      </div>
+      <div class="back">
+        <a href="../index.html" class="logo">NOVOFLORA</a></div>
+    </div>
+
+    <div class="registration-form" id="registrationForm">
+      <h2>Реєстрація</h2>
+      <form>
+        <div class="form-group">
+          <label for="reg-username">Логін</label>
+          <input type="text" id="reg-username" name="reg-username" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Пароль</label>
+          <input type="password" id="reg-password" name="reg-password" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Електронна пошта</label>
+          <input type="email" id="reg-email" name="reg-email" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Зареєструватися">
+        </div>
+      </form>
+      <div class="form-footer">
+        <p>Вже є акаунт? <a href="javascript:void(0);" onclick="showLoginForm()">Увійти</a></p>
+      </div>
+      <div class="back">
+        <a href="../index.html" class="logo">NOVOFLORA</a></div>
+    </div>
+  </div>
+
+  <script>
+    function showRegistrationForm() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registrationForm").style.display = "block";
+    }
+
+    function showLoginForm() {
+      document.getElementById("registrationForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+    }
+  </script>
+</body>
+</html>
