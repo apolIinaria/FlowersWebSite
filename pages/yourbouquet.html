@@ -3,11 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOVOFLORA</title>
+    <title>Збери букет</title>
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/yourbouquet.css">
 </head>
 <body>
+    <div class="header">
+    <a href="../index.html" class="logo">NOVOFLORA</a></div>
+    <header>
+        <h1>Збери свій букет</h1>
+    </header>
+    <div class="container">
+
+        <div class="step" id="step-1">
+          <h2>Крок 1: Оберіть квіти та кількість</h2>
+          <div class="flower-grid">
+            <div class="flower" data-name="Троянда">
+              <img src="../images/yourbouquet/rose.png" alt="Троянда">
+              <p class="flower-name">Троянда</p>
+              <div class="flower-counter">
+                <button class="minus">-</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="flower" data-name="Тюльпан">
+              <img src="../images/yourbouquet/tulip.png" alt="Тюльпан">
+              <p class="flower-name">Тюльпан</p>
+              <div class="flower-counter">
+                <button class="minus">-</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="flower" data-name="Півонія">
+              <img src="../images/yourbouquet/peony.png" alt="Півонія">
+              <p class="flower-name">Півонія</p>
+              <div class="flower-counter">
+                <button class="minus">-</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="flower" data-name="Лілія">
+              <img src="../images/yourbouquet/lily.png" alt="Лілія">
+              <p class="flower-name">Лілія</p>
+              <div class="flower-counter">
+                <button class="minus">-</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="flower" data-name="Ромашка">
+              <img src="../images/yourbouquet/daisy.png" alt="Ромашка">
+              <p class="flower-name">Ромашка</p>
+              <div class="flower-counter">
+                <button class="minus">-</button>
+                <span class="count">0</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="next">Далі</button>
+        </div>
+
+        <div class="step" id="step-2">
+          <h2>Крок 2: Оберіть упаковку</h2>
+          <div class="options">
+            <button data-value="Крафт">Крафт</button>
+            <button data-value="Плівка">Плівка</button>
+            <button data-value="Картон">Сітка</button>
+            <button data-value="Без упаковки">Без упаковки</button>
+          </div>
+          <h3>Колір стрічки:</h3>
+          <div class="options">
+            <button data-ribbon="Червона">Червона</button>
+            <button data-ribbon="Рожева">Рожева</button>
+            <button data-ribbon="Біла">Біла</button>
+          </div>
+          <button class="prev">Назад</button>
+          <button class="next">Далі</button>
+        </div>
+
+        <div class="step" id="step-3">
+          <h2>Крок 3: Додайте зелень</h2>
+          <div class="options">
+            <button data-value="Евкаліпт">Евкаліпт</button>
+            <button data-value="Гіпсофіла">Гіпсофіла</button>
+            <button data-value="Рускус">Рускус</button>
+          </div>
+          <button class="prev">Назад</button>
+          <button class="next">Далі</button>
+        </div>
+
+        <div class="step" id="step-4">
+          <h2>Крок 4: Підсумок</h2>
+          <p><strong>Ваш букет складається з:</strong></p>
+          <ul id="summary-list"></ul>
+          <button class="prev">Назад</button>
+          <button id="finish">Готово</button>
+        </div>
+      </div> 
+
+  <script src="../js/bouquet.js"></script>
 
 </body>
 </html>
