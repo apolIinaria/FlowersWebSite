@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: auto;
+    width: 100%;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+  }
+    
+  .header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+    
+  .logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+  }
+    
+  header h1 {
+    text-align: center;
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #761326;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .season-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  
+  .season {
+    text-align: center;
+    margin: 50px;
+    padding: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .season:hover {
+    transform: scale(1.02);
+  }
+  
+  .season h1,
+  .season h2 {
+    color: #761326;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+  }
+  
+  .season p {
+    font-size: 1.1em;
+    color: #761326;
+    margin-bottom: 20px;
+  }
+  
+  .season ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .season ul li {
+    font-size: 1.1em;
+    color: #761326;
+    margin: 5px 0;
+  }
+  
+  .current {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #761326;
+    font-size: 1.3em;
+  }
+  
+  .previous,
+  .next {
+    width: 150px;
+    height: 150px;
+  }
+
+  .season-decor {
+    width: 100%;
+  position: relative;
+  top: -450px;
+  z-index: -1;
+  }
+  
+  .season-decor img {
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    filter: blur(2px);
+  }
