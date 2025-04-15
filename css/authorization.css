@@ -23,10 +23,14 @@ body {
 }
 
 .form-container h2 {
-    font-size: 2rem;
-    color: #761326;
     text-align: center;
-    margin-bottom: 1.5rem;
+   font-family: 'Brock Script_D';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 44px;
+   color: #761326;
+   margin-bottom: 30px;
+   margin-top: 10px;
 }
 
 .form-group {

@@ -3,11 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOVOFLORA</title>
+    <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/catalog.css">
 </head>
 <body>
+    <div class="header">
+        <a href="../index.html" class="logo">NOVOFLORA</a></div>
+        <main class="catalog-container">
+            <aside class="filters">
+              <div class="filter-group">
+                <button class="filter-toggle" onclick="toggleFilter('category')">Категорії</button>
+                <div id="category" class="filter-content">
+                  <p>Троянди</p>
+                  <p>Півонії</p>
+                  <p>Тюльпани</p>
+                </div>
+              </div>
+              <div class="filter-group">
+                <button class="filter-toggle" onclick="toggleFilter('color')">Колір</button>
+                <div id="color" class="filter-content">
+                  <p>Рожевий</p>
+                  <p>Червоний</p>
+                  <p>Жовтий</p>
+                </div>
+              </div>
+              <div class="filter-group">
+                <button class="filter-toggle" onclick="toggleFilter('size')">Розмір</button>
+                <div id="size" class="filter-content">
+                  <p>Маленькі</p>
+                  <p>Середні</p>
+                  <p>Великі</p>
+                </div>
+              </div>
+            </aside>
+        
+            <section class="catalog">
+              <h1>Каталог</h1>
+              <div class="sort-buttons">
+                <button id="sort-asc" class="active">Сортувати за ціною</button>
+                <button id="sort-desc">Сортувати за популярністю</button>
+              </div>
+              <div class="gallery">
+                <img src="../images/catalog/1.jpg" alt="Квітка1">
+                <img src="../images/catalog/2.jpg" alt="Квітка2">
+                <img src="../images/catalog/3.jpg" alt="Квітка3">
+                <img src="../images/catalog/4.jpg" alt="Квітка4">
+                <img src="../images/catalog/5.jpg" alt="Квітка5">
+                <img src="../images/catalog/6.jpg" alt="Квітка6">
+                <img src="../images/catalog/7.jpg" alt="Квітка7">
+                <img src="../images/catalog/8.jpg" alt="Квітка8">
+                <img src="../images/catalog/9.jpg" alt="Квітка9">
+                <img src="../images/catalog/10.jpg" alt="Квітка10">
+                <img src="../images/catalog/11.jpg" alt="Квітка11">
+                <img src="../images/catalog/12.jpg" alt="Квітка12">
+              </div>
+            </section>
+          </main>
+        
+          <script>
+            function toggleFilter(id) {
+              const content = document.getElementById(id);
+              content.style.display = content.style.display === "block" ? "none" : "block";
+            }
+          </script>
 
+<script>
+    const asc = document.getElementById("sort-asc");
+    const desc = document.getElementById("sort-desc");
+  
+    [asc, desc].forEach(btn => {
+      btn.addEventListener("click", () => {
+        asc.classList.remove("active");
+        desc.classList.remove("active");
+        btn.classList.add("active");
+      });
+    });
+  </script>
 </body>
 </html>
