@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: #FADADD;
+    height: auto;
+    width: 100%;
+    color: #333;
+  }
+    
+  .header {
+    position: relative;
+    width: 100%;
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+    
+  .logo {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #761326;
+    margin-left: 50px;
+    text-decoration: none;
+  }
+    
+  header h1 {
+    text-align: center;
+    font-family: 'Brock Script_D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #761326;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+  .room {
+    position: absolute;
+    background: #55644ec9;
+    border: 7px solid #761326;
+    transition: background-image 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .label {
+    font-family: 'Kodchasan', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    font-size: 20px;
+  }
+  .room .label {
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .plants {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    display: none;
+    z-index: 3;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .room:hover .plants {
+    display: block;
+  }
+
+  .room:hover .label {
+    display: none;
+  }
+
+  #balcony {
+    width: 255px;
+    height: 67px;
+    left: 650px;
+    top: 242px;
+  }
+  #living-room {
+    width: 332px;
+    height: 186px;
+    left: 650px;
+    top: 330px;
+  }
+  #bedroom {
+    width: 184px;
+    height: 236px;
+    left: 445px;
+    top: 280px;
+  }
+  #bathroom {
+    width: 114px;
+    height: 160px;
+    left: 515px;
+    top: 538px;
+  }
+  #kitchen {
+    width: 239px;
+    height: 182px;
+    left: 650px;
+    top: 538px;
+  }
+
