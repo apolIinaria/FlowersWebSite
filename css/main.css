@@ -1,9 +1,9 @@
 body {
     margin: 0;
     background-color: #FADADD;
-    height: 6221px;
     width: 100%;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .header {
@@ -1407,43 +1407,44 @@ input::placeholder, textarea::placeholder {
     left: 58%;
 }
 
-.footer {
-    width: 100%;
-    background: url('../images/background-footer.jpg') no-repeat center center;
-    background-size: cover;
+footer {
     position: relative;
-    padding: 50px 0;
-    color: #761326;
-    font-family: 'Inter', sans-serif;
+    background-image: url('../images/background-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 457px;
     top: -1320px;
-    height: auto;
-    overflow: visible;
-}
-
-.footer::before {
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+  }
+  
+  footer::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(187, 144, 155, 0.84);
-    opacity: 0.48;
-    filter: blur(2px);
-}
-
-.footer-container,
-.newsletter-form,
-.social-icons {
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 176, 176, 0.5);
+    z-index: 0;
+  }
+  
+  .footer-container,
+  .newsletter-form,
+  .social-media {
     position: relative;
     z-index: 1;
-}
+  }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 500px 0 120px;
+    padding: 0 520px 0 100px;
 }
 
 .footer-group {
@@ -1451,7 +1452,7 @@ input::placeholder, textarea::placeholder {
     padding: 10px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 .footer-group h3 {
@@ -1460,6 +1461,8 @@ input::placeholder, textarea::placeholder {
     text-align: left;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    font-family: 'Kodchasan', sans-serif;
+    color: #761326;
 }
 
 .footer-group p {
@@ -1468,6 +1471,7 @@ input::placeholder, textarea::placeholder {
     margin-bottom: 15px;
     font-family: 'Inter', sans-serif;
     letter-spacing: 2px;
+    color: #761326;
 }
 
 .footer-group a {
@@ -1482,19 +1486,22 @@ input::placeholder, textarea::placeholder {
     color: #761326;
 }
 
-.newsletter-form {
+.newsletter-form { 
     display: flex;
-    justify-content: space-between;
-    align-items: right;
+    justify-content: flex-end;
+    align-items: stretch;
     width: 100%;
     max-width: 400px;
     margin-left: auto;
     margin-right: 120px;
-    margin-top: -50px;
+    margin-top: -170px;
     background: #EFEFEF;
     border-radius: 50px;
-    padding: 8px 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 56px;
 
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .newsletter-form input {
@@ -1502,7 +1509,7 @@ input::placeholder, textarea::placeholder {
     background: transparent;
     width: 70%;
     font-size: 16px;
-    padding: 8px;
+    padding: 10px 12px;
     border-radius: 50px;
     font-weight: 400;
 }
@@ -1513,29 +1520,44 @@ input::placeholder, textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 0 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: background 0.3s;
     outline: none;
-}
-
-.newsletter-form button:hover {
-    background: #656B61;
-}
-
-.social-icons {
     display: flex;
-    justify-content: right;
-    gap: 20px;
-    margin-top: 90px;
-    margin-right: 190px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    z-index: 5;
+    position: relative;
 }
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+.follow-btn:hover {
+    background: #6d7966;
+}
+
+.follow-btn:active {
+    transform: scale(0.98);
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 240px;
+    gap: 40px;
+    margin-top: 20px;
+}
+  
+.social-media a {
+    font-size: 32px;
+    color: #656B61;
+    transition: transform 0.3s ease;
+}
+  
+.social-media a:hover {
+    transform: scale(1.2);
+    color: #8c9686;
 }
